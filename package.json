@@ -1,0 +1,26 @@
+{
+  "name": "micro-frontends",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
+    "start": "lerna run start --scope subApp --scope container --parallel"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "",
+  "license": "ISC",
+
+  "homepage": "/",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "dependencies": {},
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}
