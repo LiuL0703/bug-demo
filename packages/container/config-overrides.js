@@ -26,7 +26,14 @@ const customizeCraOverride = override(
 );
 
 const webpack = (config, env) => {
-  return customizeCraOverride(config, env);
+  const webpackConfig = customizeCraOverride(config, env);
+  return {
+    ...webpackConfig,
+    output: {
+      ...webpackConfig.output,
+      libraryTarget: 'umd',
+    },
+  }
 };
 
 module.exports = {

@@ -39,10 +39,6 @@ const customizeCraOverride = override(
   disableSourceMap(),
   dropConsole(),
   optBuild(),
-  // addWebpackAlias({
-  //   'react': path.resolve(__dirname, '../container/node_modules/react'),
-  //   'react-dom': path.resolve(__dirname, '../container/node_modules/react-dom')
-  // })
 );
 
 const webpack = (config, env) => {
@@ -55,10 +51,10 @@ const webpack = (config, env) => {
       library: "subApp",
       libraryTarget: 'window',
     },
-    // externals: {
-    //   'react': 'react',
-    //   'react-dom': 'react-dom'
-    // },
+    externals: {
+      'react': 'React',
+      'react-dom': 'ReactDOM'
+    },
   };
 };
 
