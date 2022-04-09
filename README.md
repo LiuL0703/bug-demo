@@ -7,7 +7,7 @@ Uncaught Error: Invalid hook call. Hooks can only be called inside of the body o
 See https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem.
 
 ## Solution
-this is a duplicate React instances problem
+this is a duplicate React instances problem.<br/>
 relative issues:
 + https://reactjs.org/warnings/invalid-hook-call-warning.html
 + https://github.com/facebook/react/issues/13991
